@@ -85,7 +85,8 @@
         </CModal>
       </CFlex>
     </CBox>
-    <Form/>
+    <Form />
+    <Login />
   </div>
 </template>
 
@@ -108,6 +109,7 @@ import {
   CHeading
 } from '@chakra-ui/vue'
 import Form from '../components/Form.vue'
+import Login from '../components/login.vue'
 
 export default {
   name: 'IndexPage',
@@ -127,7 +129,8 @@ export default {
     CIconButton,
     CFlex,
     CHeading,
-    Form
+    Form,
+    Login
 },
   inject: ['$chakraColorMode', '$toggleColorMode'],
   data () {
