@@ -85,6 +85,7 @@
         </CModal>
       </CFlex>
     </CBox>
+    <Form/>
   </div>
 </template>
 
@@ -106,6 +107,7 @@ import {
   CFlex,
   CHeading
 } from '@chakra-ui/vue'
+import Form from '../components/Form.vue'
 
 export default {
   name: 'IndexPage',
@@ -124,8 +126,9 @@ export default {
     CModalCloseButton,
     CIconButton,
     CFlex,
-    CHeading
-  },
+    CHeading,
+    Form
+},
   inject: ['$chakraColorMode', '$toggleColorMode'],
   data () {
     return {
